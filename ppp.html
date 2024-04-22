@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-container {
+          width: 300px;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+        }
+        
+        .form-container h2 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        
+        .form-container label {
+          display: block;
+          margin-bottom: 5px;
+        }
+        
+        .form-container input[type="text"],
+        .form-container input[type="number"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+        }
+        
+        .form-container input[type="submit"] {
+          width: 100%;
+          padding: 10px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        
+        .form-container input[type="submit"]:hover {
+          background-color: #45a049;
+        }
+        </style>
+        
+</head>
+<body>
+    <form class="form-container">
+        <h2>Formulir Pendaftaran STMIK KAPUTAMA T.A 2024/2025 Gelombang 2</h2>
+        <p>Perhatian! field yang bertanda <b>*</b> berarti wajib diisi.</p>
+        <label for="nik">NIK : <b>*</b></label>
+        <input type="text" id="nik" name="nik">
+        <input type="submit" value="Daftar">
+      </form>
+</body>
+</html>
