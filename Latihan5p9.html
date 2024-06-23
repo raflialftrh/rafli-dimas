@@ -12,10 +12,18 @@
 
             const jumlahPulsa = Math.ceil(jumlahDetik / 45);
             const totalBiaya = jumlahPulsa * pulsaPer45Detik;
+            const jumlahJam = Math.ceil(jumlahDetik / 3600);
+            const jumlahMenit = Math.ceil(jumlahDetik / 60);
 
-            document.getElementById('hasil').textContent = 
-                `Jumlah Detik Pemakaian: ${jumlahDetik}\n` +
-                `Jumlah Pulsa: ${jumlahPulsa}\n` +
+            document.getElementById('hasil1').value =
+            `jumlah Jam: ${jumlahJam} `;
+            document.getElementById('hasil2').value =
+            `jumlah menit: ${jumlahMenit}`;
+            document.getElementById('hasil3').value =
+                `Jumlah Detik Pemakaian: ${jumlahDetik}`;
+                document.getElementById('hasil4').value =
+                `Jumlah Pulsa: ${jumlahPulsa}`;
+                document.getElementById('hasil5').value =
                 `Total Biaya: Rp${totalBiaya}`;
         }
     </script>
@@ -26,8 +34,13 @@
         <label for="jumlahDetik">Jumlah Detik Pemakaian:</label>
         <input type="number" id="jumlahDetik" name="jumlahDetik" required><br><br>
         
-        <button type="submit">Hitung Biaya</button>
+        <button type="submit">Hitung Biaya</button></br>
+        <input type="text" id="hasil1" readonly></br>
+        <input type="text" id="hasil2" readonly></br>
+        <input type="text" id="hasil3" readonly></br>
+        <input type="text" id="hasil4" readonly></br>
+        <input type="text" id="hasil5" readonly></br>
     </form>
-    <pre id="hasil"></pre>
+    
 </body>
 </html>

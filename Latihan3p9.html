@@ -28,10 +28,13 @@
 
             totalGaji += uangLembur + uangMakan;
 
-            document.getElementById('hasil').textContent = 
-                `Gaji Pokok: Rp${(gajiPerHari * jumlahHariKerja).toFixed(2)}\n` +
-                `Uang Lembur: Rp${uangLembur.toFixed(2)}\n` +
-                `Uang Makan: Rp${uangMakan.toFixed(2)}\n` +
+            document.getElementById('hasil1').value = 
+                `Gaji Pokok: Rp${(gajiPerHari * jumlahHariKerja).toFixed(2)}`;
+                document.getElementById('hasil2').value = 
+                `Uang Lembur: Rp${uangLembur.toFixed(2)}` ;
+                document.getElementById('hasil3').value = 
+                `Uang Makan: Rp${uangMakan.toFixed(2)}` ;
+                document.getElementById('hasil4').value = 
                 `Total Gaji: Rp${totalGaji.toFixed(2)}`;
         }
     </script>
@@ -47,6 +50,9 @@
         
         <button type="submit">Hitung Gaji</button>
     </form>
-    <pre id="hasil"></pre>
+    <input type="text" id="hasil1" readonly></br>
+    <input type="text" id="hasil2" readonly></br>
+    <input type="text" id="hasil3" readonly></br>
+    <input type="text" id="hasil4" readonly></br>
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -24,7 +23,7 @@
                 konversi = 'Nilai tidak valid';
             }
 
-            document.getElementById('hasil').textContent = `Nilai: ${konversi}`;
+            document.getElementById('hasil').value = konversi;
         }
     </script>
 </head>
@@ -34,7 +33,8 @@
         <label for="nilai">Masukkan Nilai:</label>
         <input type="number" id="nilai" name="nilai" required>
         <button type="submit">Konversi</button>
+        <input type="text" id="hasil" readonly>
     </form>
-    <p id="hasil"></p>
+    
 </body>
 </html>

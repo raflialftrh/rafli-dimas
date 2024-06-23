@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -18,8 +17,16 @@
 
             const totalBayar = (harga * jumlah) - diskon;
 
-            document.getElementById('hasil').textContent = 
-                `Nama Barang: ${nama}\nHarga: Rp${harga.toFixed(2)}\nJumlah: ${jumlah}\nDiskon: Rp${diskon.toFixed(2)}\nTotal Bayar: Rp${totalBayar.toFixed(2)}`;
+            document.getElementById('hasil1').value = 
+                `Nama Barang: ${nama}`;
+                document.getElementById('hasil2').value = 
+                `Harga: Rp${harga.toFixed(2)}`;
+                document.getElementById('hasil3').value = 
+                `Jumlah: ${jumlah}`;
+                document.getElementById('hasil4').value = 
+                `Diskon: Rp${diskon.toFixed(2)}`;
+                document.getElementById('hasil5').value = 
+                `Total Bayar: Rp${totalBayar.toFixed(2)}`;
         }
     </script>
 </head>
@@ -37,6 +44,10 @@
         
         <button type="submit">Hitung</button>
     </form>
-    <pre id="hasil"></pre>
+    <input type="text" id="hasil1" readonly></br>
+    <input type="text" id="hasil2" readonly></br>
+    <input type="text" id="hasil3" readonly></br>
+    <input type="text" id="hasil4" readonly></br>
+    <input type="text" id="hasil5" readonly></br>
 </body>
 </html>
